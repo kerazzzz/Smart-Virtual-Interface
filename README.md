@@ -1,8 +1,4 @@
-# Smart-Virtual-Interface
-## Hand gesture controlled mouse + Voice Assistant
-Download requirments
-train voice model (iterate: 200)
-entry: ui
+
 # Smart Virtual Interface  
 ### Hand Gesture Controlled Mouse + Voice Assistant
 
