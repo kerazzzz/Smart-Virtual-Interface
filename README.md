@@ -16,5 +16,3 @@ pip install -r requirements.txt
 ## then run
 
 ui.py
-
-# add remove intent on your own
