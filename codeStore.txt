@@ -1,0 +1,148 @@
+ui.py  ko code cha dont run this!
+# #######################works fineeeeeeeeeeeeeeeeeeeeeeee
+# import tkinter as tk
+# import os
+# import threading
+
+# class SmartVirtualInterface(tk.Tk):
+#     def __init__(self):
+#         super().__init__()
+
+#         # Window properties
+#         self.title("Smart Virtual Interface")
+#         self.configure(bg="black")
+#         self.geometry("500x300")
+
+#         # Create UI elements
+#         self.create_widgets()
+
+#     def create_widgets(self):
+#         """Create action buttons"""
+#         # Handcontrolled Button
+#         btn_hand = tk.Button(self, text="Handcontrolled", command=self.run_hand_controlled, bg="blue", fg="white", font=("Arial", 12), width=20)
+#         btn_hand.pack(pady=10)
+
+#         # Voice Assistant Button
+#         btn_voice = tk.Button(self, text="Voice Assistant", command=self.run_voice_assistant, bg="green", fg="white", font=("Arial", 12), width=20)
+#         btn_voice.pack(pady=10)
+
+#     def run_hand_controlled(self):
+#         """Run AiVirtualMouseProject.py"""
+#         os.system("python AiVirtualMouseProject.py")
+
+#     def run_voice_assistant(self):
+#         """Run for_nepali.py in a separate thread"""
+#         thread = threading.Thread(target=self.execute_voice_assistant)
+#         thread.start()
+
+#     def execute_voice_assistant(self):
+#         """Execute the voice assistant script"""
+#         os.system("python for_nepali.py")
+
+# # Run the Application
+# if __name__ == "__main__":
+#     app = SmartVirtualInterface()
+#     app.mainloop()
+
+
+
+
+
+
+# import tkinter as tk
+# import os
+# import threading
+
+# class SmartVirtualInterface(tk.Tk):
+#     def __init__(self):
+#         super().__init__()
+
+#         # Window properties
+#         self.title("Smart Virtual Interface")
+#         self.configure(bg="#20A39E")
+#         self.geometry("600x400")  # Larger window
+
+#         # Create UI elements
+#         self.create_widgets()
+
+#     def create_widgets(self):
+#         """Create action buttons with updated UI"""
+#         # Title and Subtitle
+#         tk.Label(self, text="Smart Virtual Interface", font=("Cursive", 20, "bold"), fg="white", bg="#20A39E").pack(pady=20)
+#         tk.Label(self, text="Enhancing your digital experience", font=("Monospace", 12), fg="white", bg="#20A39E").pack(pady=5)
+
+#         # Handcontrolled Button
+#         btn_hand = tk.Button(self, text="Handcontrolled", command=self.run_hand_controlled, bg="#FFBA49", fg="white", font=("Monospace", 14), width=20, relief="solid", bd=2)
+#         btn_hand.pack(pady=15)
+
+#         # Voice Assistant Button
+#         btn_voice = tk.Button(self, text="Voice Assistant", command=self.run_voice_assistant, bg="#EF5B5B", fg="white", font=("Monospace", 14), width=20, relief="solid", bd=2)
+#         btn_voice.pack(pady=15)
+
+#     def run_hand_controlled(self):
+#         """Run AiVirtualMouseProject.py"""
+#         os.system("python AiVirtualMouseProject.py")
+
+#     def run_voice_assistant(self):
+#         """Run for_nepali.py in a separate thread"""
+#         thread = threading.Thread(target=self.execute_voice_assistant)
+#         thread.start()
+
+#     def execute_voice_assistant(self):
+#         """Execute the voice assistant script"""
+#         os.system("python for_nepali.py")
+
+# # Run the Application
+# if __name__ == "__main__":
+#     app = SmartVirtualInterface()
+#     app.mainloop()
+
+
+######################simple pyqt #######################################################
+# import sys
+# import os
+# from PyQt5.QtWidgets import QApplication, QPushButton, QVBoxLayout, QWidget
+# from PyQt5.QtCore import QThread
+# import subprocess
+
+# class ScriptThread(QThread):
+#     def __init__(self, script_name):
+#         super().__init__()
+#         self.script_name = script_name
+
+#     def run(self):
+#         try:
+#             script_path = os.path.abspath(self.script_name)
+#             subprocess.run([sys.executable, script_path], check=True)
+#         except subprocess.CalledProcessError as e:
+#             print(f"Error running {self.script_name}: {e}")
+
+# class MainWindow(QWidget):
+#     def __init__(self):
+#         super().__init__()
+#         self.initUI()
+
+#     def initUI(self):
+#         layout = QVBoxLayout()
+
+#         button1 = QPushButton("Voice Assistant", self)
+#         button1.clicked.connect(lambda: self.run_script("for_nepali.py"))
+#         layout.addWidget(button1)
+
+#         button2 = QPushButton("Run FileZ2", self)
+#         button2.clicked.connect(lambda: self.run_script("FileZ2.py"))
+#         layout.addWidget(button2)
+
+#         self.setLayout(layout)
+#         self.setWindowTitle("Control Panel")
+#         self.setGeometry(300, 300, 300, 150)
+
+#     def run_script(self, script_name):
+#         self.thread = ScriptThread(script_name)
+#         self.thread.start()
+
+# if __name__ == '__main__':
+#     app = QApplication(sys.argv)
+#     mainWin = MainWindow()
+#     mainWin.show()
+#     sys.exit(app.exec_())
