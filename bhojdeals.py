@@ -33,7 +33,7 @@ def pizza():
             sleep(2)
             speak("From which resturant you want to order")
             query_fav = command().lower()
-            if ("biryani" in query_fav) or ('lazeez' in query_fav) or ('lazeez biryani' in query_fav):
+            if ("biryani" in query_fav) or ('lazeez' in query_fav) or ('lazeez biryani' in query_fav) or ('momo' in query_fav):     #any error? remove momo in..
                 speak("opening lazeez biryani house and Resturant and ordering the chicken dum biryani")
                 driver.find_element(By.XPATH,'/html/body/section[2]/div/div/div[2]/div/div[1]/ul/li[1]/div/div/a').click() # lazzez biryan ko pasal
                 sleep(2)
@@ -85,3 +85,4 @@ def pizza():
 
 if __name__ == "__main__":
     pizza()
+
