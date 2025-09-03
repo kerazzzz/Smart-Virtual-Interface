@@ -1,6 +1,5 @@
-
 # Smart Virtual Interface  
-### Hand Gesture Controlled Mouse + Voice Assistant
+## Hand Gesture Controlled Mouse + Voice Assistant
 
 A smart virtual interface that allows users to interact with their system using **hand gestures** as a mouse and a built-in **voice assistant** for voice-based commands.
 
@@ -9,6 +8,7 @@ A smart virtual interface that allows users to interact with their system using 
 ## 📦 Requirements
 
 Before running the project, install all necessary dependencies:
+
 
 
 pip install -r requirements.txt
